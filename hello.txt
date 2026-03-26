@@ -1,0 +1,5 @@
+hello world
+hello git
+my name is DongGeun
+
+corrected text : donggeun -> DongGeun
