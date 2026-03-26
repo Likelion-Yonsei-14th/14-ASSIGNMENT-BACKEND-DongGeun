@@ -1,3 +1,3 @@
 hello world
 hello git
-my name is donggeun
+my name is DongGeun
