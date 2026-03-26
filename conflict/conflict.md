@@ -1,1 +1,2 @@
-hello world from b
+hello from A
+hello from B
