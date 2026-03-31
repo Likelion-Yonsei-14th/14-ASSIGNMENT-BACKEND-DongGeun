@@ -15,7 +15,7 @@
 * SRP (Single Responsibility Principle) 위반
   - PamentService class에서 amount의 유효성 확인, type에 따른 결제 확인 등
     여러 개의 로직이 한 번에 구현되고 있음
-    -> 추후에 class 내부를 수정해야할 때, 코드가 꼬일 수 있음
+    > 추후에 class 내부를 수정해야할 때, 코드가 꼬일 수 있음
   - PaymentService class가 결제를 요청하는 역할만 수행하도록 구성
 
 
@@ -35,14 +35,14 @@
 * method 1 - checkValidAmount
   - Payment class 내부에 amount가 음수인지 판정하는 기능
   - amount의 유효값 조건이 추가/삭제될 시, Payment class 내의 해당 method만 수정하면 됨
-    -> PaymentService class에서는 amount가 유효한지, 아닌지만 판정하면 됨
+    > PaymentService class에서는 amount가 유효한지, 아닌지만 판정하면 됨
 
 * method 2 - payByType
   - Payment class 내부에 type에 따라 적절한 메시지를 띄우고 결제를 진행하거나,
     잘못된 타입인 경우 에러 메시지를 띄우는 기능
   - 새로운 type이 추가 혹은 삭제될 시, Payment class 내의 해당 method만 수정하면 됨
-    -> PaymentService class에서는 결제를 요청하는 기능만 구현
-    -> 로직 수정 시에는 Payment class를 수정하면 됨
+    > PaymentService class에서는 결제를 요청하는 기능만 구현
+    > 로직 수정 시에는 Payment class를 수정하면 됨
 
 👉 (어떤 로직을 어디로 옮겼는지 작성)
 
